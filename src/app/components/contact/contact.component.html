@@ -1,0 +1,14 @@
+
+<div class="container">
+    <h1>Contacto</h1>
+    <input type="number" [(ngModel)]="widthSlider">
+    <button (click)="cargarSlider()">Cargar slider</button>
+    <button (click)="resetearSlider()">Resetear slider</button>
+
+    <div *ngIf="anchuraToSlider">
+        
+        <app-slider [anchura]="anchuraToSlider"></app-slider>
+    </div>
+  
+</div>
+
